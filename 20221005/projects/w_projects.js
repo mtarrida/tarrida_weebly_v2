@@ -1,6 +1,8 @@
 // import {collaboradors} from '../data/collaboradors.js';
 import { projectsJson } from "../data/projects.js";
+import { custom_script_root_path } from "../generals.js";
 // import { tiposDeProjecte  } from "../data/tiposProjecte.js";
+
 
 function changeThings(htmlObjText) {
 
@@ -74,13 +76,14 @@ export function allItemsList() {
     // la manera mes optima, per tal de poder variar la ruta (local/github)
     // és agafant l'objecte script del propi weebly,
 
-    var customScriptsPath =
-        $('script[src*="weebly_bridge.js"]')[0]
-            .src
-            // .replace('/weebly_bridge.js', '');
-            .split('/')[2];
-    customScriptsPath = 'http://' + customScriptsPath;
-    console.log(customScriptsPath);
+    var customScriptsPath = custom_script_root_path();
+    
+    //     $('script[src*="weebly_bridge.js"]')[0]
+    //         .src
+    //         // .replace('/weebly_bridge.js', '');
+    //         .split('/')[2];
+    // customScriptsPath = 'http://' + customScriptsPath;
+    // console.log(customScriptsPath);
 
 
     // 2on faig l'edició dels elements
