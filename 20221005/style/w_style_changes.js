@@ -1,4 +1,4 @@
-import { custom_script_root_path } from "../generals";
+import { custom_script_root_path } from "../generals.js";
 
 
 export function onLoadChangeSomeStyles() {

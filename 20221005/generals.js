@@ -1,6 +1,6 @@
 
 
-export function custom_script_root_path() {
+export function custom_script_root_path( folders ) {
 
     var customScriptsPath = $('script[src*="weebly_bridge.js"]')[0]
         .src
