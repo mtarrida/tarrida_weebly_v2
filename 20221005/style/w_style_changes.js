@@ -1,3 +1,4 @@
+import { custom_script_root_path } from "../generals";
 
 
 export function onLoadChangeSomeStyles() {
@@ -59,8 +60,8 @@ export function onLoadChangeSomeStyles() {
 
     // logo
 
-    let logo = '<div class="logo" style="width: 2%;"> <span class="wsite-logo"><a href="/"><img style="background-color: ' + colorMenuTxt + '; height: 70px; border: 3px solid ' + colorMenuTxt + ';" src="http://127.0.0.1:5500/img/CARA-MCL-ALPHA.png" alt="TARRIDA"></a></span></div>'
-
+    let logo = '<div class="logo" style="width: 2%;"> <span class="wsite-logo"><a href="/"><img style="background-color: ' + colorMenuTxt + '; height: 70px; border: 3px solid ' + colorMenuTxt + ';" src="' + custom_script_root_path + '/img/CARA-MCL-ALPHA.png" alt="TARRIDA"></a></span></div>'
+    // http://127.0.0.1:5500/img/CARA-MCL-ALPHA.png
     // http://127.0.0.1:5500/img/CARA-MCL-ALPHA.png
 
     $('.nav-wrap').children(":first").prepend(logo);
